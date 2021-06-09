@@ -380,7 +380,9 @@ body {
 /*шестой блок, используя БЭМ*/
 .late-article {
   height: 810px;
-  margin: 250px;
+  margin: 150px;
+  padding: 0 50px 0 50px;
+  background: url("../img/latest_article/Vector.png") no-repeat 770px 0, url("../img/latest_article/element.png") no-repeat 5px 100px;
 }
 
 .late-article-text {
@@ -397,7 +399,6 @@ body {
 
 .late-article-info {
   margin-top: 40px;
-  background-color: brown;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -412,6 +413,7 @@ body {
   width: 350px;
   border-radius: 20px;
   overflow: hidden;
+  background-color: white;
 }
 
 .late-article-info__element h2 {
@@ -428,4 +430,18 @@ body {
   font-size: 16px;
   line-height: 28px;
   margin-left: 32px;
+  margin-right: 51px;
+}
+
+.late-article-info__element_link {
+  margin: 25px 0 35px 32px;
+  display: inline-block;
+}
+
+.late-article-info__element_link span {
+  padding-right: 40px;
+  background: url("../img/Vector (2).png") no-repeat right;
+  font-size: 18px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: blue;
 }
