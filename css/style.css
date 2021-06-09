@@ -383,14 +383,49 @@ body {
   margin: 250px;
 }
 
-.late-article .late-article-text {
+.late-article-text {
   text-align: center;
 }
 
-.late-article .late-article-text h2 {
+.late-article-text h2 {
   text-align: center;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   font-size: 36px;
   font-weight: 700;
   line-height: 56px;
+}
+
+.late-article-info {
+  margin-top: 40px;
+  background-color: brown;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.late-article-info__element {
+  width: 350px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.late-article-info__element h2 {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 32px;
+  margin-left: 32px;
+}
+
+.late-article-info__element p {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 28px;
+  margin-left: 32px;
 }

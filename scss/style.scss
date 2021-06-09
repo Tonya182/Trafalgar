@@ -344,8 +344,8 @@ body {
 .late-article {
 	height: 810px;
 	margin: 250px;
-	background-color: blue;
-	.late-article-text {
+
+	&-text {
 		text-align: center;
 		h2 {
 			text-align: center;
@@ -354,6 +354,35 @@ body {
 			font-size: 36px;
 			font-weight: 700;
 			line-height: 56px;
+		}
+	}
+	&-info {
+		margin-top: 40px;
+		background-color: brown;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+
+		&__element {
+			width: 350px;
+			border-radius: 20px;
+			overflow: hidden;
+			h2 {
+				font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana,
+					sans-serif;
+				font-weight: 700;
+				font-size: 21px;
+				line-height: 32px;
+				margin-left: 32px;
+			}
+			p {
+				font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana,
+					sans-serif;
+				font-weight: 300;
+				font-size: 16px;
+				line-height: 28px;
+				margin-left: 32px;
+			}
 		}
 	}
 }
