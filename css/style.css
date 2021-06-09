@@ -5,7 +5,7 @@ body {
   height: 5870px;
 }
 
-.ourservice .ourservice__link a, .leading .leading__text a {
+.ourservice .ourservice__link .link, .leading .leading__text .link, .late-article-lastlink .link {
   display: inline-block;
   margin-top: 40px;
   border: 2px solid blue;
@@ -15,7 +15,7 @@ body {
   border-radius: 20px;
 }
 
-.ourservice .ourservice__link a:hover, .leading .leading__text a:hover {
+.ourservice .ourservice__link .link:hover, .leading .leading__text .link:hover, .late-article-lastlink .link:hover {
   -webkit-box-shadow: 0 0 10px blueviolet;
           box-shadow: 0 0 10px blueviolet;
   border-radius: 30px;
@@ -23,12 +23,12 @@ body {
   transition: border-radius 0.5s ease-in;
 }
 
-.ourservice .ourservice__link a:active, .leading .leading__text a:active {
+.ourservice .ourservice__link .link:active, .leading .leading__text .link:active, .late-article-lastlink .link:active {
   -webkit-transform: translateY(5px) translateX(5px);
           transform: translateY(5px) translateX(5px);
 }
 
-.ourservice .ourservice__link a span, .leading .leading__text a span {
+.ourservice .ourservice__link .link span, .leading .leading__text .link span, .late-article-lastlink .link span {
   padding-top: 15px;
   font-size: 18px;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
@@ -444,4 +444,17 @@ body {
   font-size: 18px;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   color: blue;
+}
+
+.late-article-lastlink {
+  height: 140px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }

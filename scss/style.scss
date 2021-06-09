@@ -5,7 +5,7 @@ body {
 }
 
 %template__link {
-	a {
+	.link {
 		display: inline-block;
 		margin-top: 40px;
 		border: 2px solid blue;
@@ -345,7 +345,8 @@ body {
 	height: 810px;
 	margin: 150px;
 	padding: 0 50px 0 50px;
-	background: url("../img/latest_article/Vector.png") no-repeat 770px 0, url('../img/latest_article/element.png') no-repeat 5px 100px;
+	background: url("../img/latest_article/Vector.png") no-repeat 770px 0,
+		url("../img/latest_article/element.png") no-repeat 5px 100px;
 	&-text {
 		text-align: center;
 		h2 {
@@ -359,17 +360,17 @@ body {
 	}
 	&-info {
 		margin-top: 40px;
-		
+
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: space-between;
-		
+
 		&__element {
 			width: 350px;
 			border-radius: 20px;
 			overflow: hidden;
 			background-color: white;
-			
+
 			h2 {
 				font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana,
 					sans-serif;
@@ -401,5 +402,12 @@ body {
 				color: blue;
 			}
 		}
+	}
+	&-lastlink {
+		height: 140px;
+		display: flex;
+		justify-content: center;
+		align-items: flex-end;
+		@extend %template__link;
 	}
 }
