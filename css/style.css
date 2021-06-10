@@ -1,8 +1,14 @@
 @charset "UTF-8";
+/*Обнуление*/
+ul li {
+  list-style: none;
+}
+
+/*--------------------*/
 body {
   margin: 0 auto;
   max-width: 1600px;
-  height: 5870px;
+  height: 5670px;
 }
 
 .ourservice .ourservice__link .link, .leading .leading__text .link, .late-article-lastlink .link {
@@ -296,7 +302,8 @@ body {
 
 .testimonial__block {
   margin: 0 auto;
-  background-color: blue;
+  background-image: linear-gradient(45deg, #c9c9da, #6060ff);
+  background-image: -o-linear-gradient(45deg, #c9c9da, #6060ff);
   border-radius: 40px;
   max-width: 1120px;
   height: 425px;
@@ -457,4 +464,83 @@ body {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
+}
+
+.footer {
+  background: url("../img/latest_article/element.png") no-repeat 10px 310px, linear-gradient(45deg, #1f1ff3, #d0d0ff);
+  position: relative;
+  top: 200px;
+  width: 1600px;
+  height: 432px;
+}
+
+.footer-trafalgar {
+  position: absolute;
+  top: 118px;
+  left: 190px;
+  width: 391px;
+  height: 201px;
+}
+
+.footer-trafalgar__bigrights {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 28px;
+}
+
+.footer-trafalgar__smallrights {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 28px;
+}
+
+.footer-trafalgar__logo h2 {
+  display: inline-block;
+  width: 41px;
+  height: 41px;
+  color: blue;
+  background: url("../img/Ellipse 8.png") center no-repeat;
+  text-align: center;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 26px;
+  line-height: 47px;
+  font-weight: 700;
+}
+
+.footer-trafalgar__logo p {
+  display: inline-block;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 20px;
+}
+
+.footer-blocks {
+  position: absolute;
+  top: 115px;
+  left: 800px;
+  width: 700px;
+  height: 250px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.footer-blocks__block h2 {
+  margin-left: 35px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 60px;
+}
+
+.footer-blocks__block li {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 38px;
 }
