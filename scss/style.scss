@@ -12,6 +12,11 @@ body {
 	height: 5670px;
 }
 
+@mixin linear-gradient($direction, $fromColor, $toColor) {
+	background-image: linear-gradient($direction, $fromColor, $toColor);
+	background-image: -o-linear-gradient($direction, $fromColor, $toColor);
+}
+
 %template__link {
 	.link {
 		display: inline-block;
@@ -277,7 +282,7 @@ body {
 
 	&__block {
 		margin: 0 auto;
-		background-color: blue;
+		@include linear-gradient(45deg, rgb(201, 201, 218), rgb(96, 96, 255));
 		border-radius: 40px;
 		max-width: 1120px;
 		height: 425px;
@@ -420,7 +425,8 @@ body {
 	}
 }
 .footer {
-	background: url('../img/latest_article/element.png') no-repeat 10px 310px blue;
+	background: url("../img/latest_article/element.png") no-repeat 10px 310px,
+		linear-gradient(45deg, rgb(31, 31, 243), rgb(208, 208, 255));
 	position: relative;
 	top: 200px;
 	width: 1600px;

@@ -302,7 +302,8 @@ body {
 
 .testimonial__block {
   margin: 0 auto;
-  background-color: blue;
+  background-image: linear-gradient(45deg, #c9c9da, #6060ff);
+  background-image: -o-linear-gradient(45deg, #c9c9da, #6060ff);
   border-radius: 40px;
   max-width: 1120px;
   height: 425px;
@@ -466,7 +467,7 @@ body {
 }
 
 .footer {
-  background: url("../img/latest_article/element.png") no-repeat 10px 310px blue;
+  background: url("../img/latest_article/element.png") no-repeat 10px 310px, linear-gradient(45deg, #1f1ff3, #d0d0ff);
   position: relative;
   top: 200px;
   width: 1600px;
