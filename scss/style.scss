@@ -1,7 +1,15 @@
+/*Обнуление*/
+
+ul li {
+	list-style: none;
+}
+
+/*--------------------*/
+
 body {
 	margin: 0 auto;
 	max-width: 1600px;
-	height: 5870px;
+	height: 5670px;
 }
 
 %template__link {
@@ -409,5 +417,84 @@ body {
 		justify-content: center;
 		align-items: flex-end;
 		@extend %template__link;
+	}
+}
+.footer {
+	background: url('../img/latest_article/element.png') no-repeat 10px 310px blue;
+	position: relative;
+	top: 200px;
+	width: 1600px;
+	height: 432px;
+}
+.footer-trafalgar {
+	position: absolute;
+	top: 118px;
+	left: 190px;
+	width: 391px;
+	height: 201px;
+	&__bigrights {
+		font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana,
+			sans-serif;
+		font-weight: 300;
+		font-size: 18px;
+		line-height: 28px;
+	}
+	&__smallrights {
+		font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana,
+			sans-serif;
+		font-weight: 300;
+		font-size: 16px;
+		line-height: 28px;
+	}
+	&__logo {
+		h2 {
+			display: inline-block;
+			width: 41px;
+			height: 41px;
+
+			color: blue;
+			background: url("../img/Ellipse\ 8.png") center no-repeat;
+			text-align: center;
+
+			font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana,
+				sans-serif;
+			font-size: 26px;
+			line-height: 47px;
+			font-weight: 700;
+		}
+		p {
+			display: inline-block;
+			font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana,
+				sans-serif;
+			font-size: 24px;
+			font-weight: 700;
+			line-height: 20px;
+		}
+	}
+}
+.footer-blocks {
+	position: absolute;
+	top: 115px;
+	left: 800px;
+	width: 700px;
+	height: 250px;
+	display: flex;
+	justify-content: space-around;
+	&__block {
+		h2 {
+			margin-left: 35px;
+			font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana,
+				sans-serif;
+			font-weight: 700;
+			font-size: 20px;
+			line-height: 60px;
+		}
+		li {
+			font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana,
+				sans-serif;
+			font-weight: 300;
+			font-size: 18px;
+			line-height: 38px;
+		}
 	}
 }
